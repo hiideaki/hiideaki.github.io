@@ -61,7 +61,7 @@ $(document).ready(function() {
     $('.scrollToContato').click(scrollToContato)
 
     scrollHandler = function() {
-        top = $(window).scrollTop();
+        top = Math.ceil($(window).scrollTop());
 
         if(top < windowHeight) {
             $('header').removeClass('header-projeto');
